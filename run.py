@@ -21,3 +21,5 @@ for i in range(1,len(all_case)):
     # ip="http://120.78.128.25:8766"
     response=http_request(ip+test_data[4],eval(test_data[5]),'Bearer '+token,method=test_data[3])
     print("最后的结果是：",response)
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
