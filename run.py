@@ -3,6 +3,8 @@
 # @Author  :lemon_yuehaulong
 # @Email    :374748859@qq.com
 #执行文件
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
 from read_data import read_data
 from request import http_request
 #第一步 获取到测试数据
@@ -21,5 +23,3 @@ for i in range(1,len(all_case)):
     # ip="http://120.78.128.25:8766"
     response=http_request(ip+test_data[4],eval(test_data[5]),'Bearer '+token,method=test_data[3])
     print("最后的结果是：",response)
-import sys, io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
