@@ -3,8 +3,8 @@
 # @Author  :lemon_yuehaulong
 # @Email    :374748859@qq.com
 #执行文件
-from ceshiyong.read_data import read_data
-from ceshiyong.request import http_request
+from read_data import read_data
+from request import http_request
 #第一步 获取到测试数据
 all_case=read_data('text_shuju_1.xlsx','Sheet1')
 # print('获取到的数据为：',all_case_1)
