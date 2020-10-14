@@ -15,7 +15,7 @@ if __name__ == '__main__':
     #登陆
     login_url = 'http://120.78.128.25:8766/futureloan/member/login'
     login_data = {'mobile_phone': '15220597312', 'pwd': 'lemon666'}
-    response=http_request(login_url,login_data,)
+    response=http_request(login_url,login_data)
     token =response['data']['token_info']['token']
     #充值
     recharge_url='http://120.78.128.25:8766/futureloan/member/recharge'
